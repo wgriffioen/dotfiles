@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo 'Removing all symlinks'
-rm ~/.gitconfig ~/.gitignore ~/.zshrc ~/.oh-my-zsh ~/.vim ~/.vimrc
+rm ~/.gitconfig ~/.gitignore ~/.zshrc ~/.oh-my-zsh ~/.vim ~/.vimrc ~/.tmux.conf
 
 echo 'Updating all dependencies'
 git submodule init
@@ -15,6 +15,7 @@ ln -s `pwd`/vimrc ~/.vimrc
 ln -s `pwd`/gitconfig ~/.gitconfig
 ln -s `pwd`/gitignore ~/.gitignore
 ln -s `pwd`/zshrc ~/.zshrc
+ln -s `pwd`/tmux ~/.tmux.conf
 
 echo 'Checking for rbenv installation'
 

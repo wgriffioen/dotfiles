@@ -1,4 +1,5 @@
-set -g prefix Ctrl-a
+unbind C-b
+set -g prefix C-a
 
 set -g status-left-length 52
 set -g status-right-length 451
