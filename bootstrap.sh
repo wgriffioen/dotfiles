@@ -1,5 +1,8 @@
 #!/bin/sh
 
+echo 'Removing all symlinks'
+rm ~/.gitconfig ~/.gitignore ~/.zshrc ~/.oh-my-zsh ~/.vim ~/.vimrc
+
 echo 'Updating all dependencies'
 git submodule init
 git submodule update
