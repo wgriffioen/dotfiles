@@ -18,7 +18,7 @@ ln -s `pwd`/zshrc ~/.zshrc
 
 echo 'Checking for rbenv installation'
 
-rbenvdirectory = "~/.rbenv"
+rbenvdirectory="~/.rbenv"
 
 if [ -d $rbenvdirectory ] ; then
     echo "rbenv is already installed"

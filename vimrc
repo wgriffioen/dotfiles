@@ -32,6 +32,7 @@ set ruler
 set visualbell
 set noerrorbells
 set nocompatible
+let mapleader=','
 
 " Kill the arrow keys
 inoremap <Up> <nop>
@@ -57,3 +58,10 @@ set smartcase
 nnoremap ; :
 nnoremap j gj
 nnoremap k gk
+
+" Fugitive options
+noremap <leader>gs :Gstatus<cr>
+noremap <leader>gc :Gcommit<cr>
+noremap <leader>gh :Git hist<cr>
+noremap <leader>gp :Git push<cr>
+noremap <leader>gu :Git Pull<cr>
