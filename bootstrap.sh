@@ -6,12 +6,12 @@ git submodule update
 
 echo 'Symlinking all the files and directories'
 
-ln -s oh-my-zsh ~/.oh-my-zsh 
-ln -s vim ~/.vim
-ln -s vimrc ~/.vimrc
-ln -s gitconfig ~/.gitconfig
-ln -s gitignore ~/.gitignore
-ln -s zshrc ~/.zshrc
+ln -s `pwd`/oh-my-zsh ~/.oh-my-zsh 
+ln -s `pwd`/vim ~/.vim
+ln -s `pwd`/vimrc ~/.vimrc
+ln -s `pwd`/gitconfig ~/.gitconfig
+ln -s `pwd`/gitignore ~/.gitignore
+ln -s `pwd`/zshrc ~/.zshrc
 
 echo 'Checking for rbenv installation'
 
