@@ -2,22 +2,31 @@ call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
 " Set GUI options
-set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h12
-set background=dark
 colorscheme solarized 
-let g:solarized_termtrans = 1
+set background=dark
 set number
-set laststatus=2
-set guioptions-=r " Remove the right hand scrollbar
-set guioptions-=T " Remove the toolbar
 let g:Powerline_symbols = 'fancy'
+let g:solarized_termtrans = 1
+
+if has("gui_running")
+    set guifont=Bitstream\ Vera\ Sans\ Mono\ for\ Powerline:h12
+    set guioptions-=r " Remove the right hand scrollbar
+    set guioptions-=T " Remove the toolbar
+endif
+
+set t_Co=256
+set term=xterm-256color
+
+set laststatus=2
+set ch=2
 
 " Syntax enabled by default
 syntax enable
 
 " Tabstop
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 filetype plugin indent on
 
