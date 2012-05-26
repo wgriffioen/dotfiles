@@ -25,6 +25,6 @@ set -g base-index 1
 
 # Keybindings for resizing
 bind -r C-h resize-pane -L
+bind -r C-k resize-pane -U
 bind -r C-j resize-pane -D
-bind -r C-j resize-pane -U
 bind -r C-l resize-pane -R

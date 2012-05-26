@@ -5,6 +5,7 @@ call pathogen#helptags()
 colorscheme solarized 
 set background=dark
 set number
+set colorcolumn=80
 let g:Powerline_symbols = 'fancy'
 let g:solarized_termtrans = 1
 

@@ -13,3 +13,9 @@
 
 [core]
     excludesfiles = ~/.gitignore
+    pager = ''
+
+[diff]
+    tool = vimdiff
+[color]
+	  ui = true
