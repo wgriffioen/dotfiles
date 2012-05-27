@@ -28,3 +28,12 @@ bind -r C-h resize-pane -L
 bind -r C-k resize-pane -U
 bind -r C-j resize-pane -D
 bind -r C-l resize-pane -R
+
+# Keybindings for navigating through panes
+bind-key -r j select-pane -D 
+bind-key -r k select-pane -U
+bind-key -r h select-pane -L 
+bind-key -r l select-pane -R 
+
+# scrollback buffer lines
+set -g history-limit 5000

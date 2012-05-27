@@ -4,7 +4,7 @@ call pathogen#helptags()
 " Set GUI options
 colorscheme solarized 
 set background=dark
-set number
+set relativenumber
 set colorcolumn=80
 let g:Powerline_symbols = 'fancy'
 let g:solarized_termtrans = 1
@@ -59,12 +59,16 @@ set udir=~/.vim/undo
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 " Search options
-set hlsearch
-set incsearch
+nnoremap / /\v
+vnoremap / /\v
 set ignorecase
 set smartcase
+set gdefault
+set hlsearch
+set incsearch
+nnoremap <leader><space> :noh<cr>
 
-" Various mapping options   
+" Various mapping options
 nnoremap ; :
 nnoremap j gj
 nnoremap k gk

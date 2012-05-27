@@ -13,7 +13,6 @@
 
 [core]
     excludesfiles = ~/.gitignore
-    pager = ''
 
 [diff]
     tool = vimdiff
