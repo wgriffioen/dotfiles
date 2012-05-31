@@ -20,6 +20,8 @@ set term=xterm-256color
 
 set laststatus=2
 set ch=2
+set list
+set listchars=tab:▸\ ,eol:¬
 
 " Syntax enabled by default
 syntax enable
@@ -42,6 +44,8 @@ set ruler
 set visualbell
 set noerrorbells
 set nocompatible
+
+" Leader commands
 let mapleader=','
 
 " Kill the arrow keys
@@ -75,7 +79,9 @@ nnoremap k gk
 
 " Fugitive options
 noremap <leader>gs :Gstatus<cr>
+noremap <leader>ga :Git add .<cr>
 noremap <leader>gc :Gcommit<cr>
 noremap <leader>gh :Git hist<cr>
 noremap <leader>gp :Git push<cr>
 noremap <leader>gu :Git Pull<cr>
+
