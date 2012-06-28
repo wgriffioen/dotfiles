@@ -37,3 +37,6 @@ bind-key -r l select-pane -R
 
 # scrollback buffer lines
 set -g history-limit 5000
+
+# Fix the annoying escape time
+set -s escape-time 0

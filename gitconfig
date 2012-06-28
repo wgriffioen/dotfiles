@@ -1,6 +1,6 @@
 [user]
-    name = Wim Griffioen
-    email = wgriffioen@gmail.com
+	name = Wim Griffioen
+	email = wgriffioen@gmail.com
 
 [alias]
     co = checkout
@@ -13,8 +13,15 @@
 
 [core]
     excludesfiles = ~/.gitignore
+	excludesfile = /Users/wgriffioen/.gitignore
 
 [diff]
     tool = vimdiff
 [color]
 	  ui = true
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[difftool "sourcetree"]
+	cmd = " "
+	path = 

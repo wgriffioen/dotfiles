@@ -20,8 +20,6 @@ set term=xterm-256color
 
 set laststatus=2
 set ch=2
-set list
-set listchars=tab:▸\ ,eol:¬
 
 " Syntax enabled by default
 syntax enable
