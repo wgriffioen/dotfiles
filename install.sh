@@ -16,7 +16,6 @@ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-buil
 echo "Installing the vim configuration"
 git clone git://github.com/wgriffioen/vim-files.git ~/.vim
 ln -s ~/.vim/vimrc ~/.vimrc
-vim +BundleInstall +qall
 
 echo "Almost done. Symlinking all the other config files"
 ln -s ~/.dotfiles/gitconfig ~/.gitconfig
