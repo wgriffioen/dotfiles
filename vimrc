@@ -1,10 +1,30 @@
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+set  nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Vundle
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/nerdtree'
+Bundle 'othree/html5-syntax'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-haml'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'tpope/vim-surround'
+Bundle 'gregsexton/gitv'
+
+filetype plugin indent on
 
 " Set GUI options
 colorscheme solarized 
 set background=dark
-set relativenumber
+set number
 set colorcolumn=80
 let g:Powerline_symbols = 'fancy'
 let g:solarized_termtrans = 1
@@ -61,8 +81,6 @@ set udir=~/.vim/undo
 nmap <silent> <c-n> :NERDTreeToggle<CR>
 
 " Search options
-nnoremap / /\v
-vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
@@ -82,4 +100,5 @@ noremap <leader>gc :Gcommit<cr>
 noremap <leader>gh :Git hist<cr>
 noremap <leader>gp :Git push<cr>
 noremap <leader>gu :Git Pull<cr>
+noremap <leader>gv :Gitv<cr>
 
